@@ -10,10 +10,10 @@ export default function useAddWhishlist() {
     return await axios.post(
       `https://ecommerce.routemisr.com/api/v1/wishlist`,
       {
-        headers,
+        headers: headers,
       },
       {
-        productId: productId,
+        "productId": productId,
       }
     );
   }
